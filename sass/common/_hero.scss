@@ -21,8 +21,10 @@
 	background-image: url("../images/hero-bg.jpg");
 	background-size: cover;
 	background-position: center center;
+	padding: 0;
 	h1,h2 {
 		text-transform: uppercase;
+		margin: 0 !important;
 	}
 	h1 {
 		color : $base_green;

@@ -1,33 +1,35 @@
-// $( document ).ready(function() {
-// 	$("section").height($(window).height());
-
-// 	 var stickyNav = function () {
-//         var scrollTop = $(window).scrollTop();
-//         if (scrollTop > 300) {
-//             $('header').addClass('selected');
-//         } else {
-//             $('header').removeClass('selected');
-//         }
-//     };
-       
-    
-
-//     $(window).scroll(function () {
-//         stickyNav();
-//     });
-
-//      $(".index li a").click(function(event) {
-//         event.preventDefault();
-//         console.log();
-//         $('html, body').animate({
-//             scrollTop: $("#"+$(this).data("nav")).offset().top
-//         }, 500);
-//     });
-// })
+/*jslint browser: true*/
 $(document).ready(function () {
-
-    $(".player").mb_YTPlayer().on("YTPUnstarted", function(e){
-        console.log("ready");
+    var stickyNav = function () {
+        var winHeight = $(window).height();
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > 60) {
+            $('.navbar').addClass('rel');
+        } else {
+            $('.navbar').removeClass('rel');
+        }
+        if (scrollTop > winHeight && $('.navbar').hasClass('rel')) {
+            $('.navbar').addClass('fxd');
+            $('.copy').addClass('marge_section');
+        } else {
+            $('.navbar').removeClass('fxd');
+            $('.copy').removeClass('marge_section');
+        }
+    };
+    stickyNav();
+    $(window).scroll(function () {
+        stickyNav();
     });
 
+    $(".index li a").click(function (event) {
+        event.preventDefault();
+        console.log();
+        $('html, body').animate({
+            scrollTop: $("#" + $(this).data("nav")).offset().top
+        }, 500);
+    });
+
+    $(".player").mb_YTPlayer().on("YTPUnstarted", function () {
+        console.log("ready");
+    });
 });

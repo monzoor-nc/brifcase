@@ -1,7 +1,20 @@
 .navbar-brand {
     padding: 12px 15px;
 }
-
+.navbar {
+	min-height: 60px;
+}
+.rel {
+	position: relative;
+}
+.fxd {
+	position: fixed;
+	top: 0;
+	bottom: auto;
+}
+.marge_section {
+	margin-top: 60px;
+}
 .navbar-inverse {
 	.navbar-nav {
 		&.nav{
@@ -23,7 +36,7 @@
 					float: none !important;
 				}
 			}
-			
+
 			>a {
 				color: $white;
 				text-transform: uppercase;

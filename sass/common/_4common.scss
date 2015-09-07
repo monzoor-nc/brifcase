@@ -9,6 +9,13 @@ body{
 	text-decoration: none;
 	// color: $base_text;
 }
+* ul {
+	margin: 0;
+	padding: 0;
+}
+* li{
+	list-style: none;
+}
 img {
 	display: block;
 }
@@ -39,4 +46,68 @@ input {
 
 .img-center {
     margin: 0 auto;
+}
+.row-center-align {
+	float: none;
+	margin: 0 auto;
+}
+
+h1,h2,h3 {
+	margin: 0 0 30px;
+}
+h1 + p {
+		margin-bottom: 0;
+	}
+h1{
+	text-transform: uppercase;
+}
+p {
+	line-height: 1.6;
+	margin-bottom: 20px;
+	&.font-sm {
+		font-size: 18px;
+	}
+}
+.headline-text {
+	h1 {
+		margin-bottom: 10px;
+	}
+	p{
+		margin-bottom: 70px;
+		color: $secondary_text;
+	}
+}
+.weightThin { font-weight: 300 }
+.weightRegular { font-weight: 400 }
+.weightSemibold { font-weight: 600 }
+.weightBold { font-weight: 700 }
+.weightxBold { font-weight: 800 }
+
+.section_bg {
+	background-color: $section_bg;
+}
+
+section {
+	padding: 60px 0 30px;
+}
+
+.dl-horizontal dd {
+	margin-left: 60px;
+	margin-bottom: 20px;
+	p{
+		margin-bottom: 10px;
+	}
+}
+.dl-horizontal dt {
+	width: 40px;
+	text-align: left;
+	float: left;
+	font-size: 38px;
+	color: $base_green;
+}
+.reponsive-pull-right {
+	float: right !important;
+	@include responsive(mobile){
+		float: none !important;
+	}
 }
