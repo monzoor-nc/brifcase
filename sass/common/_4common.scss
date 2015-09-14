@@ -75,6 +75,9 @@ p {
 	p{
 		margin-bottom: 70px;
 		color: $secondary_text;
+		&.with_bg {
+			color: white;
+		}
 	}
 }
 .weightThin { font-weight: 300 }
@@ -130,7 +133,7 @@ section {
 	}
 }
 .special {
-	padding-bottom : 60px;
+	padding-bottom : 70px;
 }
 .marginbot-20 {
 	margin-bottom: 20px;
@@ -172,4 +175,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 	text-align: left;
 }
 
-
+.active_form {
+	background-color: #15f2cd;
+	    height: 429px;
+}

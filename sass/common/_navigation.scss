@@ -21,6 +21,10 @@
 			width: 100%;
 		}
 		>li {
+			margin-top: 5px;
+			&.nav-logo {
+				margin-top: -1px;
+			}
 			&.selected {
 				padding-bottom: 5px;
 				border-bottom: 2px solid $base-green;

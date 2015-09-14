@@ -1,5 +1,12 @@
 .features {
 	padding-top: 0;
+	height: 100vh;
+	display: table;
+	margin: 60px auto;
+	.container {
+		display: table-cell;
+		vertical-align: middle;
+	}
 	.feature {
 		img {
 			margin-bottom: 20px;
