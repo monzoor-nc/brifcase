@@ -25,9 +25,9 @@
 			&.nav-logo {
 				margin-top: -1px;
 			}
-			&.selected {
-				padding-bottom: 5px;
-				border-bottom: 2px solid $base-green;
+			
+			&:last-child {
+				margin-bottom: 10px;
 			}
 			
 			@include responsive(mobile) {
@@ -45,6 +45,13 @@
 				color: $white;
 				text-transform: uppercase;
 				padding-bottom: 0;
+				&:focus {
+					outline: none;
+				}
+				&.selected {
+					padding-bottom: 5px;
+					border-bottom: 2px solid $base-green;
+				}
 			}
 		}
 	}
@@ -52,3 +59,35 @@
 .full-logo {
 	width: 122px;
 }
+
+@media (max-width: 927px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+    	&.collapse {
+	        display: none!important;
+	    	&.in {
+		        display: block!important;
+		    }
+	    }
+    }
+    .navbar-nav {
+        float: none!important;
+        >li {
+	        float: none !important;
+	    }
+    }
+    .small-logo {
+    	display: block !important;
+    }
+    .full-logo-wrapper {
+    	display: none !important;
+    }
+}
+ .navbar>.container-fluid .navbar-brand {
+ 	margin-left: 0;
+ }

@@ -1,28 +1,44 @@
+.avatar {
+    margin-top: 20px;
+    float: left;
+    @include responsive(mobile) {
+      float: none;
+      display: table;
+      margin: 20px auto 0;
+    }
+    @include responsive(tab-portrait) {
+      float: none;
+      display: table;
+      margin: 20px auto 0;
+    }
+}
+
 .user-avatar {
-  border-radius: 200px;
-  overflow: hidden;
-  display: block;
-  width: 45px;
-  height: 45px;
-  position: relative;
-  &.extra-large {
-    width: 200px;
-    height: 200px;
-  }
-  &.large {
-    width: 120px;
-    height: 120px;
-  }
-  &.medium {
-    width: 75px;
-    height: 75px;
-  }
-  &.small-large{
+    border-radius: 200px;
+    overflow: hidden;
+    display: block;
     width: 45px;
     height: 45px;
-  }
-  &.small {
-    width: 32px;
-    height: 32px;
-  }
+    position: relative;
+
+    &.extra-large {
+        width: 200px;
+        height: 200px;
+    }
+    &.large {
+        width: 120px;
+        height: 120px;
+    }
+    &.medium {
+        width: 75px;
+        height: 75px;
+    }
+    &.small-large {
+        width: 45px;
+        height: 45px;
+    }
+    &.small {
+        width: 32px;
+        height: 32px;
+    }
 }

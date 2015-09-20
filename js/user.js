@@ -21,41 +21,50 @@ $(document).ready(function () {
         stickyNav();
     });
 
-    $(".index li a").click(function (event) {
+    $(".navbar-nav li a, .btn.ask").click(function (event) {
         event.preventDefault();
-        console.log();
+        $(".navbar-nav li a").removeClass("selected");
+        $(this).addClass("selected");
+        var navUrl = $(this).data("nav");
+        console.log(navUrl)
         $('html, body').animate({
-            scrollTop: $("#" + $(this).data("nav")).offset().top
+            scrollTop: $(navUrl).offset().top - 40
+        }, 500);
+    });
+
+    $(".btn.ask").click(function (event) {
+        event.preventDefault();
+        var navUrl = $(this).data("nav");
+        console.log(navUrl)
+        $('html, body').animate({
+            scrollTop: $(navUrl).offset().top - 40
         }, 500);
     });
 
     $(".player").mb_YTPlayer().on("YTPUnstarted", function () {
         console.log("ready");
     });
-    $('.test').change(function () {
+    $('.switch').change(function () {
         $('.card').toggleClass('applyflip');
         console.log("changed");
     }.bind(this));
 
-    var theForm = document.getElementById('theForm');
 
+    var theForm = document.getElementById('theForm');
     new stepsForm(theForm, {
         onSubmit : function (form) {
             // hide form
-            classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
-
+            classie.addClass(theForm.querySelector('.simform-inner'), 'hide');
             /*
             form.submit()
             or
             AJAX request (maybe show loading indicator while we don't have an answer..)
             */
-
             // let's just simulate something...
-            var messageEl = theForm.querySelector( '.final-message' );
-            messageEl.innerHTML = 'Thank you! We\'ll be in touch.<br><a href="" class="btn ask btn-lg">Ask briefcase</a>';
-            classie.addClass( messageEl, 'show' );
+            var messageEl = theForm.querySelector('.final-message');
+            messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+            classie.addClass(messageEl, 'show');
         }
-    } );
-
+    });
 });
 

@@ -1,11 +1,11 @@
 .simform {
   position: relative;
   margin: 0 auto;
-  padding: 2em 0;
-  max-width: 860px;
-  width: 90%;
+  padding: 10em 0 4em;
   text-align: left;
-  font-size: 2.5em;
+  font-size: 1.5em;
+  font-weight: normal;
+  width: 90%;
 }
 
 .simform .submit {
@@ -191,7 +191,7 @@
   margin: 0.4em 0;
   width: 3em;
   font-weight: 700;
-  font-size: 0.4em;
+  font-size: 0.7em;
 }
 
 .simform .number:after {
