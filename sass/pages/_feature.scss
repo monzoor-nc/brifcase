@@ -21,4 +21,19 @@
 			}
 		}
 	}
+	ul {
+		padding: 0 60px;
+	}
+	li { 
+    	padding-left: 1em; 
+    	list-style: disc outside;
+    	color: $base_green;
+    	font-size: 16px;
+    	p {
+    		font-size: 14px;
+    		color: black;
+    		padding: 19px 0 0 0 !important;
+    		margin-bottom: 0;
+    	}
+	}
 }

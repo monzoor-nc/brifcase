@@ -159,6 +159,8 @@ section {
     margin: 0;
 }
 
+
+
 .btn {
     border-radius: 0;
     &.ask {
@@ -233,3 +235,17 @@ form#contact-form textarea:focus {
     text-align: left;
 }
 
+.no-visible {
+    visibility: hidden;
+}
+.no-margin {
+    margin: 0 !important;
+}
+strong.mg {
+    margin-top: 5px;
+    display: block;
+}
+
+.big-font {
+    font-size: 18px;
+}

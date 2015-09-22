@@ -392,6 +392,23 @@ form#contact-form textarea:focus {
   text-align: left;
 }
 
+.no-visible {
+  visibility: hidden;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+strong.mg {
+  margin-top: 5px;
+  display: block;
+}
+
+.big-font {
+  font-size: 18px;
+}
+
 .avatar {
   margin-top: 20px;
   float: left;
@@ -438,6 +455,59 @@ form#contact-form textarea:focus {
 .user-avatar.small {
   width: 32px;
   height: 32px;
+}
+
+.hexagon {
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+  cursor: pointer;
+}
+
+.hexagon-in1 {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+.hexagon-in2 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  visibility: visible;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+.hexagon1 {
+  width: 400px;
+  height: 200px;
+  margin: 0 0 0 -80px;
+}
+
+.hexagon2 {
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.dodecagon {
+  width: 200px;
+  height: 200px;
+  margin: -80px 0 0 20px;
 }
 
 .simform {
@@ -1351,6 +1421,21 @@ blockquote p {
   text-transform: uppercase;
   font-size: 18px;
 }
+.feature ul {
+  padding: 0 60px;
+}
+.feature li {
+  padding-left: 1em;
+  list-style: disc outside;
+  color: #39d52d;
+  font-size: 16px;
+}
+.feature li p {
+  font-size: 14px;
+  color: black;
+  padding: 19px 0 0 0 !important;
+  margin-bottom: 0;
+}
 
 .inside_briefcase {
   background-image: url("../images/W6T0A7NDTF.jpg");
@@ -1388,6 +1473,21 @@ blockquote p {
     height: auto;
     padding-bottom: 80px;
   }
+}
+
+.others_talk .name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.others_talk .des {
+  margin-bottom: 10px;
+}
+.others_talk .talk {
+  padding: 0 20px;
+}
+
+.others .headline-text {
+  margin-bottom: 60px;
 }
 
 .overview {
@@ -1458,4 +1558,11 @@ blockquote p {
 }
 .ask :-ms-input-placeholder {
   color: white;
+}
+
+.margin_top {
+  margin-top: 50px;
+}
+.margin_top h2 {
+  line-height: 1.6em;
 }
