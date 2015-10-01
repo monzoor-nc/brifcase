@@ -1,9 +1,10 @@
 .feature {
-	padding-top: 0;
-	
+	&.section_bg {
+		padding-top: 60px 0;
+	}
 	.row{
 	    display: table;
-	    height: 100vh;
+	    // height: 100vh;
 	    .container-full {
 	      	display: table-cell;
 	      	vertical-align: middle;
@@ -31,7 +32,7 @@
     	font-size: 16px;
     	p {
     		font-size: 14px;
-    		color: black;
+    		color: #282828;
     		padding: 19px 0 0 0 !important;
     		margin-bottom: 0;
     	}

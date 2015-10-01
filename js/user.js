@@ -66,5 +66,40 @@ $(document).ready(function () {
             classie.addClass(messageEl, 'show');
         }
     });
+
+
+        $('h1.text-center').t({
+          /*basic settings*/
+            speed: 63, // typing speed (ms)
+            speed_vary: false, // delays start for (N.)Ns
+            mistype: false, // mistyping: 1:N per char
+            locale: 'en', // keyboard layout; 'en', 'de'
+            tag: 'span',
+            rtl: true,
+            fin: function(e) {
+              _e = e.find('.t-caret');
+              setInterval(function() {
+                _e.toggleClass('vis');
+              }, 5e2)
+            }
+      });
+
+      $('#demo2').t(
+        "<span class='header2'>LAWYERS ARE EXPENSIVE.</span><br/>LEGAL ESSENTIALS SHOULDN\'T BE. ",{
+            speed: 70, // typing speed (ms)
+            speed_vary: false, // delays start for (N.)Ns
+            mistype: false, // mistyping: 1:N per char
+            locale: 'en', // keyboard layout; 'en', 'de'
+            tag: 'span',
+            rtl: true,
+            caret:'|',  
+            fin: function(e) {
+              _e = e.find('.t-caret');
+              setInterval(function() {
+                _e.toggleClass('vis');
+              }, 5e2)
+            }
+        });
+    new WOW().init();
 });
 

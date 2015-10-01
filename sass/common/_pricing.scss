@@ -34,12 +34,12 @@
  * Choose a different color based on the type of pricing table.
  */
 .pricing-table-free .pricing-table-header {
-  background: #519251;
+  background: #71B439;
   text-align: center;
 }
 
 .pricing-table-biz .pricing-table-header {
-  background: #2c4985;
+  background: #006F42;
   text-align: center;
 }
 
@@ -78,7 +78,7 @@
   font-size: 0.2em;
   padding-bottom: 2em;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
   *color: #fff;
 }
 
