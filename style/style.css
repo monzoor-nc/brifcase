@@ -253,6 +253,10 @@ p.font-sm {
   color: white;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .weightThin {
   font-weight: 300;
 }
@@ -411,6 +415,17 @@ strong.mg {
 
 .url-color {
   color: #ECEEEE;
+}
+
+.social ul {
+  margin-top: 20px;
+}
+.social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.social li a {
+  color: white;
 }
 
                  /*!
@@ -3268,8 +3283,10 @@ Copyright (c) 2015 Daniel Eden
   height: 200px;
 }
 .user-avatar.large {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #39d52d;
+  margin: 0 auto;
 }
 .user-avatar.medium {
   width: 75px;
@@ -3370,6 +3387,57 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
+.blinking-cursor {
+  font-weight: 100;
+  color: white;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+  font-weight: 700;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
 .simform {
   position: relative;
   margin: 0 auto;
@@ -4036,13 +4104,16 @@ footer p {
 .pricing-table-list.border {
   border-bottom: 1px solid black;
 }
+.pricing-table-list.border.last {
+  padding-bottom: 11px;
+}
 
 /*
  * -- PRICING TABLE LIST ELEMENTS --
  * Styles for the individual list elements within each pricing table
  */
 .pricing-table-list > div {
-  padding: 20px 10px;
+  padding: 20px 50px;
 }
 .pricing-table-list > div span {
   font-size: 20px;
@@ -4059,6 +4130,7 @@ footer p {
   -o-perspective: 1000px;
   -ms-perspective: 1000px;
   position: relative;
+  height: 1440px;
 }
 
 .card .content {
@@ -4288,7 +4360,7 @@ blockquote p {
   font-size: 18px;
 }
 .feature ul {
-  padding: 0 60px;
+  padding: 0 20px;
 }
 .feature li {
   padding-left: 1em;

@@ -99,6 +99,9 @@
   }
   &.border {
     border-bottom: 1px solid black;
+    &.last {
+      padding-bottom: 11px;
+    }
   }
 }
 
@@ -108,7 +111,7 @@
  * Styles for the individual list elements within each pricing table
  */
 .pricing-table-list >div {
-  padding: 20px 10px;
+  padding: 20px 50px;
   span {
   	font-size: 20px;
   	color: $base_green;
@@ -130,7 +133,7 @@
   -o-perspective: 1000px;
   -ms-perspective: 1000px;
   position:relative;
-  
+  height: 1440px;
 }
 
 .card .content {

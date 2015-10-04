@@ -26,7 +26,6 @@ $(document).ready(function () {
         $(".navbar-nav li a").removeClass("selected");
         $(this).addClass("selected");
         var navUrl = $(this).data("nav");
-        console.log(navUrl)
         $('html, body').animate({
             scrollTop: $(navUrl).offset().top - 40
         }, 500);
@@ -35,7 +34,6 @@ $(document).ready(function () {
     $(".btn.ask").click(function (event) {
         event.preventDefault();
         var navUrl = $(this).data("nav");
-        console.log(navUrl)
         $('html, body').animate({
             scrollTop: $(navUrl).offset().top - 40
         }, 500);
@@ -67,24 +65,7 @@ $(document).ready(function () {
         }
     });
 
-
-        $('h1.text-center').t({
-          /*basic settings*/
-            speed: 63, // typing speed (ms)
-            speed_vary: false, // delays start for (N.)Ns
-            mistype: false, // mistyping: 1:N per char
-            locale: 'en', // keyboard layout; 'en', 'de'
-            tag: 'span',
-            rtl: true,
-            fin: function(e) {
-              _e = e.find('.t-caret');
-              setInterval(function() {
-                _e.toggleClass('vis');
-              }, 5e2)
-            }
-      });
-
-      $('#demo2').t(
+    $('#demo2').t(
         "<span class='header2'>LAWYERS ARE EXPENSIVE.</span><br/>LEGAL ESSENTIALS SHOULDN\'T BE. ",{
             speed: 70, // typing speed (ms)
             speed_vary: false, // delays start for (N.)Ns
@@ -92,7 +73,7 @@ $(document).ready(function () {
             locale: 'en', // keyboard layout; 'en', 'de'
             tag: 'span',
             rtl: true,
-            caret:'|',  
+            caret:'',  
             fin: function(e) {
               _e = e.find('.t-caret');
               setInterval(function() {

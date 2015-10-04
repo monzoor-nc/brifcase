@@ -96,6 +96,9 @@ p {
         }
     }
 }
+.text-justify {
+    text-align: justify;
+}
 
 .weightThin {
     font-weight: 300
@@ -251,4 +254,17 @@ strong.mg {
 }
 .url-color {
     color: #ECEEEE;
+}
+
+.social {
+    ul {
+        margin-top: 20px;
+    }
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        a {
+            color: white;
+        }
+    }
 }
