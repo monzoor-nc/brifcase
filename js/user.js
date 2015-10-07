@@ -42,6 +42,9 @@ $(document).ready(function () {
     $(".player").mb_YTPlayer().on("YTPUnstarted", function () {
         console.log("ready");
     });
+    if ($(window).width()>430) {
+
+    }
     $('.switch').change(function () {
         $('.card').toggleClass('applyflip');
         console.log("changed");
